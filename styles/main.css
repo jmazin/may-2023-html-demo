@@ -1,0 +1,118 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  border-top: 5px solid green;
+}
+.header__logo-container {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.header__logo {
+  height: 6rem;
+}
+.header__title {
+  margin-left: 1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navbar {
+  background-color: orangered;
+}
+.navbar__list {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__link {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 50vh;
+  background-image: url("../background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__title {
+  background-color: white;
+  padding: 1rem;
+  border: 5px solid green;
+}
+
+.main-content {
+  display: flex;
+}
+
+.ingredient-list {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+}
+
+.ingredient {
+  background-color: white;
+  width: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.ingredient--featured {
+  background-color: green;
+  color: white;
+}
+.ingredient__img {
+  width: 100%;
+}
+
+.comment-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  background: #eee;
+  padding: 1rem;
+  margin: 1rem;
+  width: 75%;
+}
+.comment::before {
+  content: "“";
+  font-size: 5rem;
+  margin-bottom: -4rem;
+  display: block;
+}
+.comment--reply {
+  align-self: flex-end;
+}
+
+.footer {
+  background-color: orange;
+  padding: 2rem 1rem;
+  display: flex;
+}
+.footer__copyright {
+  flex-grow: 1;
+}
+.footer__link {
+  color: black;
+  margin-left: 1rem;
+}/*# sourceMappingURL=main.css.map */
